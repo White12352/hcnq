@@ -33,11 +33,11 @@ jobs:
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
-          git checkout -b dev-7
+          git checkout -b dev-7.0.1
           rm -rf .github
           cp -r code/* .
           cp -r code/.github .
           rm -rf code
           git add .
           git commit -m "commit"
-          git push --force origin dev-7
+          git push --force origin dev-7.0.1
